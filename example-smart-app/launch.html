@@ -26,10 +26,6 @@
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script>
-      document.write('Before FHIR.oauth2.authorize');
-    <!--
-      alert( 'Before FHIR.oauth2.authorize' );
-    -->
       FHIR.oauth2.authorize({
         'client_id': 'a98e57e4-515b-45c5-8505-353520794c0c',
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
@@ -37,12 +33,7 @@
         'scope':  'patient/*.read launch online_access openid profile'
         -->
       });
-    <!--
-      alert( 'After FHIR.oauth2.authorize' );
-    -->
-      document.write('After FHIR.oauth2.authorize');
     </script>
-    <h1>Welcome to launch.html</h1>
     <div class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
